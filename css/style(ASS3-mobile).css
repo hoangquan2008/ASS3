@@ -1,0 +1,685 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.hinhanh {
+  display: flex;
+  flex-basis: 200px;
+  flex-shrink: 1;
+  justify-content: space-around;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /*background-color: gray;*/
+}
+
+.menu > div {
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-basis: calc(100%);
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu_item {
+}
+.col {
+  flex-basis: 100% !important;
+}
+
+.Chi_tiet_cho_desktop {
+  display: none;
+}
+.Chi_tiet_cho_tablet {
+  display: none;
+}
+
+div[class*="chi_tiet_"] {
+  /*border: 1px solid chocolate;*/
+  margin-bottom: 2em;
+  flex-basis: 33.33%;
+  flex-shrink: 1;
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+/*Đây là phần Ảnh nền và chữ trên ảnh*/
+.hinhanh {
+  position: relative;
+}
+.banner1 {
+  position: absolute;
+  font-size: 32px;
+  color: #fff;
+  top: 16px;
+  /*padding-left: 200px;*/
+}
+.banner2 {
+  position: absolute;
+  top: 57px;
+  /*padding-left: 521px;*/
+  font-size: 24px;
+  color: #fff;
+}
+
+/*Đây là phần nav-bar */
+
+.menu {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: white;
+  height: 76px;
+}
+.menu_item a {
+  text-decoration: none;
+}
+.menu_item_1 a {
+  text-decoration: none;
+}
+.menu_item {
+  border-right: 1px solid black;
+  flex-basis: calc(10%);
+  display: flex;
+  justify-content: left;
+  align-items: stretch;
+  color: black;
+}
+.menu_item_1 {
+  border-right: none;
+}
+/* Đây là phần Mục tiêu nghề nghiệp và Thông tin cá nhân*/
+.thong_tin_ca_nhan {
+  padding-top: 234px;
+}
+.MTNN {
+  background-color: #a9a9a9;
+}
+.TTCN {
+  background-color: #808080;
+}
+.icon-user {
+  color: #74c0fc;
+}
+.icon-doc-text-inv {
+  color: #74c0fc;
+}
+.icon-mail-alt {
+  color: #74c0fc;
+}
+.icon-star-1 {
+  color: #74c0fc;
+}
+
+.icon-twitter {
+  color: #74c0fc;
+}
+.icon-facebook {
+  color: #74c0fc;
+}
+.icon-gplus {
+  color: #74c0fc;
+}
+.icon-linkedin {
+  color: #74c0fc;
+}
+
+/*Đây là phần Kinh nghiệm, Học vấn , ... */
+.container1 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  justify-content: center;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+/*Đây là phần Kinh nghiệm*/
+
+.chi_tiet_kinh_nghiem {
+  box-sizing: border-box;
+  border: 1px solid #e9ecef;
+  height: 645px;
+  width: 300px;
+}
+.KN1 {
+  display: grid;
+  grid-template-columns: 200px 100px;
+  text-align: center;
+  height: 50px;
+  padding-top: 20px;
+}
+.KN2 {
+  padding: 20px;
+}
+.KNG {
+  display: inline-block;
+}
+.KNG1 {
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  padding: 5px;
+}
+.ic-toolbox {
+  font-size: 30px;
+}
+
+/*Đây là phần học vấn*/
+.chi_tiet_hoc_van {
+  box-sizing: border-box;
+  border: 1px solid #e9ecef;
+  height: 645px;
+  width: 300px;
+}
+.HV1 {
+  display: grid;
+  grid-template-columns: 200px 100px;
+  text-align: center;
+  height: 50px;
+  padding-top: 20px;
+}
+.HV1 h1 {
+  padding-top: 10px;
+  padding-left: 0;
+}
+.ic-pencil {
+  color: black;
+  font-size: 32px;
+  padding-right: 100px;
+}
+.HV2 {
+  padding: 20px;
+}
+/*Đây là phần hoạt động*/
+.chi_tiet_hoat_dong {
+  box-sizing: border-box;
+  border: 1px solid #e9ecef;
+  height: 645px;
+  width: 300px;
+}
+.HĐ1 {
+  display: grid;
+  grid-template-columns: 200px 100px;
+  text-align: center;
+  height: 50px;
+  padding-top: 20px;
+}
+.HĐ1 h1 {
+  padding-top: 10px;
+  padding-left: 0;
+}
+.ic-toolbox {
+  color: black;
+  font-size: 32px;
+  padding-right: 100px;
+}
+.HĐ2 {
+  padding: 20px;
+}
+/*Đây là phần sở thích*/
+.container2 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  justify-content: center;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+.chi_tiet_so_thich {
+  box-sizing: border-box;
+  border: 1px solid #e9ecef;
+  height: 400px;
+  width: 300px;
+}
+.ST1 {
+  display: grid;
+  grid-template-columns: 200px 100px;
+  text-align: center;
+  height: 50px;
+  padding-top: 20px;
+}
+.ST1 h1 {
+  padding-top: 10px;
+  padding-left: 0;
+}
+.ic-telescope {
+  color: black;
+  font-size: 32px;
+  padding-right: 100px;
+}
+.ic-megaphone {
+  margin: 6px;
+  display: block;
+  font-size: 30px;
+  color: blue;
+}
+.ic-strategy {
+  margin: 11px;
+  display: block;
+  font-size: 30px;
+  color: blue;
+}
+.ic-hotairballoon {
+  margin: 11px;
+  display: block;
+  font-size: 30px;
+  color: blue;
+}
+.ic-basket {
+  margin: 7px;
+  display: block;
+  font-size: 30px;
+  color: blue;
+}
+.ST2 p {
+  margin-left: 15px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid blue;
+}
+.ST3 p {
+  margin-left: 10px;
+  display: inline-block;
+}
+/*Đây là phần ngôn ngữ*/
+.chi_tiet_ngon_ngu {
+  box-sizing: border-box;
+  border: 1px solid #e9ecef;
+  height: 400px;
+  width: 300px;
+}
+.NN1 {
+  display: grid;
+  grid-template-columns: 200px 100px;
+  text-align: center;
+  height: 50px;
+  padding-top: 20px;
+}
+.NN1 h1 {
+  padding-top: 10px;
+  padding-left: 0;
+}
+.ic-mic {
+  color: black;
+  font-size: 32px;
+}
+.NN2 {
+  padding: 20px;
+}
+.NN3 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.NN4 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.NN5 {
+  background: #ced4da;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.NN6 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.NN7 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.NN8 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+/*Đây là phần Kỹ năng*/
+.chi_tiet_ky_nang {
+  box-sizing: border-box;
+  border: 1px solid #e9ecef;
+  height: 400px;
+  width: 300px;
+}
+.KNA1 {
+  display: grid;
+  grid-template-columns: 200px 100px;
+  text-align: center;
+  height: 50px;
+  padding-top: 20px;
+}
+.KNA1 h1 {
+  padding-top: 10px;
+  padding-left: 0;
+}
+.ic-tools-2 {
+  color: black;
+  font-size: 32px;
+}
+.KNA2 {
+  padding: 20px;
+}
+.KNA3 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.KNA4 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.KNA5 {
+  background: #ced4da;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.KNA6 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.KNA7 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.KNA8 {
+  background: #ced4da;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.KNA9 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.KNA10 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.KNA11 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.KNA12 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.KNA13 {
+  background: #ced4da;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.KNA14 {
+  background: #ced4da;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+/*Đây là phần Chứng chỉ - Giải thưởng*/
+
+.container6 {
+  display: grid;
+  grid-template-columns: 1fr;
+  /*row-gap: 100px;*/
+  padding-top: 50px;
+}
+.CCGT1 {
+  display: grid;
+  grid-template-columns: 330px;
+  /*border-right: solid 1px #d6c08d;*/
+  margin-right: 20px;
+}
+
+.CCGT2 {
+  display: grid;
+  grid-template-columns: 330px;
+  padding-top: 70px;
+}
+.CCGT3 {
+  display: grid;
+  grid-template-columns: 330px;
+  /*border-top: solid 1px #d6c08d;*/
+  padding-top: 70px;
+}
+/*.container7 {
+  padding-left: 50px;
+}*/
+.CCGT4 {
+  border-top: solid 1px #d6c08d;
+  padding-top: 70px;
+  width: 600px;
+}
+/*Đây là phần Dự án*/
+
+/*Đây là dự án 1*/
+.container8 {
+  display: grid;
+  grid-template-columns: 250px;
+  justify-content: center;
+  /*column-gap: 50px;*/
+  row-gap: 50px;
+  /*padding-left: 50px;*/
+}
+.tieu_de_du_an {
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+.DA {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  justify-content: center;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+.DA1 {
+  box-sizing: border-box;
+  border: 1px solid #e9ecef;
+  height: 700px;
+  width: 300px;
+}
+.DA1A {
+  padding: 20px;
+}
+.DA1B {
+  display: grid;
+  grid-template-columns: 50px 30px 60px 30px 60px;
+  /*justify-content: left;*/
+  padding: 20px;
+}
+.icon-user-1 {
+  padding-left: 10px;
+}
+.DA1B12 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.DA1B1 {
+  background-color: blue;
+  color: White;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 12px;
+  padding: 2px;
+}
+.DA1C {
+  display: grid;
+  grid-template-columns: 50px 250px;
+  /*padding: 20px;*/
+  /*padding-left: 20px;*/
+}
+.DA1D {
+  display: grid;
+  grid-template-columns: 50px 250px;
+  /*padding: 20px;
+  padding-left: 20px;*/
+}
+.DA1E {
+  display: grid;
+  grid-template-columns: 50px 250px;
+  /*padding: 20px;
+  padding-left: 20px;*/
+}
+.DA-5 {
+  padding-left: 40px;
+}
+
+/*Đây là dự án 2*/
+
+.DA2 {
+  box-sizing: border-box;
+  border: 1px solid #e9ecef;
+  height: 750px;
+  width: 300px;
+}
+.DA2A {
+  padding: 20px;
+}
+.DA2B {
+  display: grid;
+  grid-template-columns: 50px 30px 60px 30px 60px;
+  justify-content: left;
+  padding: 20px;
+}
+
+.DA2B2 {
+  background-color: blue;
+  color: White;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 12px;
+  padding: 2px;
+}
+.DA2C {
+  display: grid;
+  grid-template-columns: 50px 200px;
+  /*padding: 20px;*/
+}
+.DA2D {
+  display: grid;
+  grid-template-columns: 50px 200px;
+  /*padding: 20px;*/
+}
+.DA2E {
+  display: grid;
+  grid-template-columns: 50px 200px;
+  /*padding: 20px;*/
+}
+
+/*Đây là dự án 3*/
+.DA3 {
+  box-sizing: border-box;
+  border: 1px solid #e9ecef;
+  height: 610px;
+  width: 300px;
+}
+.DA3A {
+  padding: 20px;
+}
+.DA3B {
+  display: grid;
+  grid-template-columns: 50px 30px 60px 30px 60px;
+  justify-content: left;
+  padding: 20px;
+}
+.DA3B3 {
+  background-color: blue;
+  color: White;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 12px;
+  padding: 2px;
+}
+.DA3C {
+  display: grid;
+  grid-template-columns: 50px 200px;
+  /*padding: 20px;*/
+}
+.DA3D {
+  display: grid;
+  grid-template-columns: 50px 200px;
+  /*padding: 20px;*/
+}
+.DA3E {
+  display: grid;
+  grid-template-columns: 50px 200px;
+  /*padding: 20px;*/
+}
+
+/*Đây là phần liên hệ */
+
+.ABC {
+  margin-top: 130px;
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.icon-facebook-circled {
+  color: #74c0fc;
+}
+.icon-linkedin-circled {
+  color: #74c0fc;
+}
+.icon-github-circled {
+  color: #74c0fc;
+}
+
+.FB {
+  color: black;
+}
+.LK {
+  color: black;
+}
+.GH {
+  color: black;
+}
